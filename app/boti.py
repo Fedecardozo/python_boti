@@ -5,6 +5,7 @@ import Funciones
 import Textos
 import Descripcion
 import Zonas
+import random
 
 
 def marketplace(carpeta, fotos_path, zona, min, max, facebook):
@@ -62,7 +63,7 @@ def marketplace(carpeta, fotos_path, zona, min, max, facebook):
 
     # Titulo
     Funciones.CopiarPegar(Elementos.Titulo,Textos.ObtenerTitulo(Textos.titulos_termotanques))
-    time.sleep(1.2)
+    time.sleep(1.5)
 
     # Precio
     Funciones.CargarTexto(Elementos.Precio,Funciones.GenerarPrecio(min,max))
@@ -85,6 +86,8 @@ def marketplace(carpeta, fotos_path, zona, min, max, facebook):
     # Funcion
     Funciones.Click(Elementos.Publicar)
 
+# INICIO CODIGO NORMAL 
+    
 print("Facebook en el que se va a publicar")
 print("1- Clari")
 print("2- Agus, Fede, Lea y Colo")
@@ -111,8 +114,26 @@ for i in range(len(zona)):
     fotos_path = Funciones.NumerosSecuenciales(num,num+3)
     num = num + 3
     strCarpeta = '00'
-
     time.sleep(2)
     pathCarpeta = strCarpeta + carpeta
     marketplace(pathCarpeta,fotos_path,zona[i],min,max,facebook)
     time.sleep(12)
+
+# FIN CODIGO NORMAL
+
+
+# PUBLICAR DE MANERA CONTINUA
+# for j in range(10,18):
+#     zona = Zonas.ObtenerZona(j)
+#     num = 0
+#     strCarpeta = '00'
+#     pathCarpeta = strCarpeta + str(j)
+#     min = random.randint(20,40)
+#     max = random.randint(50,99)
+
+#     for i in range(len(zona)):    
+#         fotos_path = Funciones.NumerosSecuenciales(num,num+3)
+#         num = num + 3
+#         time.sleep(2)
+#         marketplace(pathCarpeta,fotos_path,zona[i],min,max,1)
+#         time.sleep(12)

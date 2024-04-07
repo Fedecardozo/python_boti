@@ -8,7 +8,6 @@ Zonas2 = ["Adrog",
           "Aldo bonz",
           "Almagro, bu",
           "Arturo Segui",
-          "Arturo Segui",
           "San Andres, bueno",
           "Ranelagh, bu",
           "Puerto Madero, bue"]
@@ -20,11 +19,9 @@ Zonas3 = ["La lucila, bu",
           "Balvanera, bue",
           "Berisso, bu",
           "Hudson, bu",
-          "Santa Maria, bueno",
           "Solano, bue"]
 
 Zonas4 = ["Recoleta, bue",
-          "Avellaneda",
           "Bella Vista, bu",
           "Castelar, bueno",
           "Barracas, bue",
@@ -84,8 +81,8 @@ Zonas10 = ["Cogh",
            "Tristan Sua",
            "Velez Sarsfield, bu",
            "Paso del rey",
-           "Mu'ñ'iz, bue",
-           "Ca'ñ'uelas"]
+           "Muñiz, bue",
+           "Cañuelas"]
 
 Zonas11 = ["Colegiales",
            "Lanus, bu",
@@ -197,7 +194,7 @@ Zonas22 = ["Libertad (Buenos Aires)",
            "Villa riac",
            "Villa Bosch",
            "Presidente Derq",
-           "Nu'ñ'ez, bu",
+           "Nuñez, bu",
            "Ezpe"]
 
 Zonas23 = ["Palermo, bu",
