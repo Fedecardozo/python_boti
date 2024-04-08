@@ -1,6 +1,7 @@
 from tkinter import * 
 from tkinter import ttk
 import tkinter.messagebox as msjBox
+import boti
 
 # ----------------------------- INICIO FUNCIONES --------------------------
 
@@ -68,10 +69,10 @@ def confirmar():
         return rta == "ok"
 
 def clickPublicar():
+    raiz.title(var.get())
     if(validarPrecios() and validarZona() and confirmar()):
-        
-        raiz.title("ok")
         #llamar a boti
+        boti.publicarBoti(int(entry.get()),int(entryMax.get()),int(entryZona.get()),var.get())
 
 def validate_input(new_text):
     # Verificar si el nuevo texto contiene solo números

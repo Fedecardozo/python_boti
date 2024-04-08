@@ -88,18 +88,20 @@ def marketplace(carpeta, fotos_path, zona, min, max, facebook):
 
 # INICIO CODIGO NORMAL 
     
-print("Facebook en el que se va a publicar")
-print("1- Clari")
-print("2- Agus, Fede, Lea y Colo")
+# print("Facebook en el que se va a publicar")
+# print("1- Clari")
+# print("2- Agus, Fede, Lea y Colo")
 
-facebook = int(input("Ingrese Opcion: "))
-min = int(input("Ingrese precio minimo: "))
-max = int(input("Ingrese precio maximo: "))
-carpeta = input("Ingrese numero de carpeta: ")
-zona = Zonas.ObtenerZona(int(input("Ingrese numero de zona: ")))
+# facebook = int(input("Ingrese Opcion: "))
+# min = int(input("Ingrese precio minimo: "))
+# max = int(input("Ingrese precio maximo: "))
+# carpeta = input("Ingrese numero de carpeta: ")
 
-def publicarBoti(min, max, carpeta, zona, facebook):
+def publicarBoti(min, max, zone, facebook):
     num = 0
+    zona = Zonas.ObtenerZona(zone)
+    carpeta = str(zone)
+
     time.sleep(2)
     Funciones.AbriNavegador()
     time.sleep(5)
@@ -113,7 +115,7 @@ def publicarBoti(min, max, carpeta, zona, facebook):
         marketplace(pathCarpeta,fotos_path,zona[i],min,max,facebook)
         time.sleep(12)
 
-publicarBoti(min,max,carpeta,zona,facebook)
+# publicarBoti(min,max,carpeta,zona,facebook)
 
 # FIN CODIGO NORMAL
 
