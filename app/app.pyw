@@ -1,7 +1,7 @@
+import boti
 from tkinter import * 
 from tkinter import ttk
 import tkinter.messagebox as msjBox
-import boti
 
 # ----------------------------- INICIO FUNCIONES --------------------------
 
@@ -83,16 +83,15 @@ def validate_input(new_text):
 
 # INCIO PROGRAMA
 raiz = Tk()
-raiz.config(bg="#262c40")
 raiz.resizable(width="false",height="false")
 
 # Registrar la función de validación
 validate_numeric_input = raiz.register(validate_input)
 
 #Frame izquierdo
-frameIzq = Frame(raiz)
+frameIzq = Frame(raiz,bg="#262c40")
 fondo = PhotoImage(file="C:\\Users\\Fedec\\SanJorge\\0003_AUTOMATIZACION\\app\\img\\fondoJorge.png")
-lblImage = Label(frameIzq,image=fondo)
+lblImage = Label(frameIzq,image=fondo,bg="#262c40")
 lblImage.pack(side="left")
 frameIzq.pack()
 
@@ -201,7 +200,7 @@ btnSalir = Button(frameBtns,text="Salir",width=15,padx=5,pady=5,bg="red",cursor=
 btnSalir.grid(row=0,column=0,padx=5)
 
 # Boton publicar
-btnPublicar = Button(frameBtns, text="Publicar",width=15,padx=5,pady=5,bg="green",cursor="hand2",command=clickPublicar)
+btnPublicar = Button(frameBtns, text="Publicar",width=20,padx=5,pady=5,bg="green",cursor="hand2",command=clickPublicar)
 btnPublicar.grid(row=0,column=1,padx=5)
 
 # ----------------------- FIN BOTONES ------------------------------
