@@ -8,25 +8,22 @@ import Zonas
 import random
 
 
-def marketplace(carpeta, fotos_path, zona, min, max, facebook):
+def marketplace(carpeta, fotos_path, zona, min, max, facebook, producto):
     # Esperar 5 segundos para volver a publicar
     time.sleep(3)
     Funciones.ClickUrl("https://www.facebook.com/marketplace/create/item")
     time.sleep(7)
 
     # Cargar archivos
-    Funciones.CargarArchivos(fotos_path, carpeta)
+    Funciones.CargarArchivos(fotos_path, carpeta, producto)
 
     # Ocultar amigos
     time.sleep(1)
     pyautogui.moveTo(350, 800)
     time.sleep(1)
 
-    #Clari 700. demas 750
-    if(facebook == 1): #clari
-        pyautogui.scroll(-700)   
-    elif(facebook == 2):
-        pyautogui.scroll(-750)
+    # Scroll
+    Funciones.scrollNegativoFacebook(facebook)
 
     pyautogui.click()
 
@@ -37,7 +34,8 @@ def marketplace(carpeta, fotos_path, zona, min, max, facebook):
 
     # Descripcion
     time.sleep(0.7)
-    Funciones.CopiarPegar(Elementos.Descripcion,Descripcion.Termotanques)
+    descrip = Descripcion.ObtenerDescripcion(producto)
+    Funciones.CopiarPegar(Elementos.Descripcion,descrip)
     time.sleep(2)
 
     # Ubicacion
@@ -46,13 +44,8 @@ def marketplace(carpeta, fotos_path, zona, min, max, facebook):
     # Detalles cerrar
     time.sleep(0.5)
 
-    if(facebook == 1):
-        # pyautogui.scroll(840) #Aires clari
-        pyautogui.scroll(800) #Termotanques/Tanques clari
-        # pyautogui.scroll(930) #Cocinas
-    elif(facebook == 2):
-        # pyautogui.scroll(910) #Cocinas
-        pyautogui.scroll(780) #Termotanques/Tanques
+    # Scroll
+    Funciones.scrollFacebook(facebook, producto)
 
     time.sleep(0.2)
     pyautogui.click()
@@ -62,7 +55,7 @@ def marketplace(carpeta, fotos_path, zona, min, max, facebook):
     pyautogui.scroll(100)
 
     # Titulo
-    Funciones.CopiarPegar(Elementos.Titulo,Textos.ObtenerTitulo(Textos.titulos_termotanques))
+    Funciones.CopiarPegar(Elementos.Titulo,Textos.ObtenerTitulo(Textos.GetTitulo(producto)))
     time.sleep(1.5)
 
     # Precio
@@ -97,10 +90,10 @@ def marketplace(carpeta, fotos_path, zona, min, max, facebook):
 # max = int(input("Ingrese precio maximo: "))
 # carpeta = input("Ingrese numero de carpeta: ")
 
-def publicarBoti(min, max, zone, facebook):
+def publicarBoti(min, max, zone, facebook, producto):
     num = 0
     zona = Zonas.ObtenerZona(zone)
-    carpeta = str(zone)
+    carpeta = Funciones.getCarpeta(zone)
 
     time.sleep(2)
     Funciones.AbriNavegador()
@@ -112,7 +105,8 @@ def publicarBoti(min, max, zone, facebook):
         strCarpeta = '00'
         time.sleep(2)
         pathCarpeta = strCarpeta + carpeta
-        marketplace(pathCarpeta,fotos_path,zona[i],min,max,facebook)
+        marketplace(pathCarpeta,fotos_path,zona[i],min,max,facebook,producto)
+        break
         time.sleep(12)
 
 # publicarBoti(min,max,carpeta,zona,facebook)

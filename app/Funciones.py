@@ -3,6 +3,7 @@ import time
 import random
 import Elementos
 import clipboard
+import Producto
 
 def NumerosSecuenciales(min,max):
     # Generar una lista de strings con formato "0001.jpg", "0002.jpg", etc.
@@ -13,7 +14,7 @@ def NumerosSecuenciales(min,max):
 
     return resultado
 
-def CargarArchivos(fotos_path,carpeta):
+def CargarArchivos(fotos_path,carpeta,producto):
     time.sleep(1)
     # pyautogui.click("fotos.png")
     Click(Elementos.Fotos)
@@ -22,7 +23,7 @@ def CargarArchivos(fotos_path,carpeta):
     pyautogui.write(fotos_path)
 
     # archivo_ruta = 'C:\\Users\\Fedec\\SanJorge\\COMBO_TANQUES\\' + carpeta
-    archivo_ruta = 'C:\\Users\\Fedec\\SanJorge\\TERMOTANQUES\\' + carpeta
+    archivo_ruta = 'C:\\Users\\Fedec\\SanJorge\\'+Producto.ObtenerNameCarpeta(producto)+'\\' + carpeta
     # archivo_ruta = 'C:\\Users\\Fedec\\SanJorge\\COCINAS\\' + carpeta
     # archivo_ruta = 'C:\\Users\\Fedec\\SanJorge\\AIRES\\' + carpeta
     ClickUrl(archivo_ruta)
@@ -116,3 +117,28 @@ def AbriNavegador():
     pyautogui.write("chrome.exe --start-maximized", 0.03)
     time.sleep(2)
     pyautogui.press("enter")
+
+def getCarpeta(zone):
+    if(zone < 10):
+        return "0"+str(zone)
+    else:
+        return str(zone)
+    
+def scrollFacebook(opc=1, producto="termotanques"):
+    scroll = Producto.ObtenerScroll(producto)
+    if(opc == 1):
+        # 840 Aires clari
+        # 930 Cocinas clari
+        # 800 termos/tanques clari
+        pyautogui.scroll(scroll+20) 
+    elif(opc == 2):
+        # 820 Aires
+        # 910 Cocinas
+        # 780 Termo/Tanques 
+        pyautogui.scroll(scroll) 
+
+def scrollNegativoFacebook(opc=1):
+    if(opc == 1):
+        pyautogui.scroll(-700) 
+    elif(opc == 2):
+        pyautogui.scroll(-750) 

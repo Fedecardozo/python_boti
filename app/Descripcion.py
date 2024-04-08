@@ -49,3 +49,14 @@ Entregas inmediatas 🌪
 Envíos a todo el país 🇦🇷 
 
 Su consulta no molesta 🌿"""
+
+def ObtenerDescripcion(producto):
+    prd = str.lower(producto)
+    if(prd == "termotanques"):
+        return Termotanques
+    elif(prd == "tanques"):
+        return Tanques
+    elif(prd == "cocinas"):
+        return Cocinas
+    elif(prd == "aires"):
+        return Aires

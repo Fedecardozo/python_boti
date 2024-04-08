@@ -72,7 +72,7 @@ def clickPublicar():
     raiz.title(var.get())
     if(validarPrecios() and validarZona() and confirmar()):
         #llamar a boti
-        boti.publicarBoti(int(entry.get()),int(entryMax.get()),int(entryZona.get()),var.get())
+        boti.publicarBoti(int(entry.get()),int(entryMax.get()),int(entryZona.get()),var.get(),select_options.get())
 
 def validate_input(new_text):
     # Verificar si el nuevo texto contiene solo números

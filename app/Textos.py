@@ -240,3 +240,14 @@ def ObtenerTitulo(titulos):
     num = len(titulos) - 1
     indice = random.randint(0,num)
     return titulos[indice]
+
+def GetTitulo(producto):
+    prd = str.lower(producto)
+    if(prd == "termotanques"):
+        return titulos_termotanques
+    elif(prd == "cocinas"):
+        return titulos_cocinas
+    elif(prd == "tanques"):
+        return titulos_tanques
+    elif(prd == "aires"):
+        return titulos_aires
