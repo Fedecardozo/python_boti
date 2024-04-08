@@ -69,7 +69,6 @@ def confirmar():
         return rta == "ok"
 
 def clickPublicar():
-    raiz.title(var.get())
     if(validarPrecios() and validarZona() and confirmar()):
         #llamar a boti
         boti.publicarBoti(int(entry.get()),int(entryMax.get()),int(entryZona.get()),var.get(),select_options.get())
