@@ -91,33 +91,29 @@ def marketplace(carpeta, fotos_path, zona, min, max, facebook):
 print("Facebook en el que se va a publicar")
 print("1- Clari")
 print("2- Agus, Fede, Lea y Colo")
+
 facebook = int(input("Ingrese Opcion: "))
-
-# print("Facebook en el que se va a publicar")
-# print("1- Termotanques")
-# print("2- Cocinas")
-# print("3- Aires")
-# print("4- Tanques")
-# producto = int(input("Ingrese Opcion: "))
-
 min = int(input("Ingrese precio minimo: "))
 max = int(input("Ingrese precio maximo: "))
-num = 0
 carpeta = input("Ingrese numero de carpeta: ")
 zona = Zonas.ObtenerZona(int(input("Ingrese numero de zona: ")))
-# carpeta = "26"
-time.sleep(2)
-Funciones.AbriNavegador()
-time.sleep(5)
 
-for i in range(len(zona)):    
-    fotos_path = Funciones.NumerosSecuenciales(num,num+3)
-    num = num + 3
-    strCarpeta = '00'
+def publicarBoti(min, max, carpeta, zona, facebook):
+    num = 0
     time.sleep(2)
-    pathCarpeta = strCarpeta + carpeta
-    marketplace(pathCarpeta,fotos_path,zona[i],min,max,facebook)
-    time.sleep(12)
+    Funciones.AbriNavegador()
+    time.sleep(5)
+
+    for i in range(len(zona)):    
+        fotos_path = Funciones.NumerosSecuenciales(num,num+3)
+        num = num + 3
+        strCarpeta = '00'
+        time.sleep(2)
+        pathCarpeta = strCarpeta + carpeta
+        marketplace(pathCarpeta,fotos_path,zona[i],min,max,facebook)
+        time.sleep(12)
+
+publicarBoti(min,max,carpeta,zona,facebook)
 
 # FIN CODIGO NORMAL
 
