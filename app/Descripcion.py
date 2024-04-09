@@ -50,6 +50,23 @@ Envíos a todo el país 🇦🇷
 
 Su consulta no molesta 🌿"""
 
+Microondas = """🍀SAN JORGE HOGAR🍀
+Microondas 
+
+✨Variedad de marcas 
+▫Samsung
+▫Likon
+▫Siam
+▫Daewoo
+▫BGH 
+
+💲Los mejores precios/varios métodos de pago 
+✅Garantía oficial de fábrica 
+🚚Entregas inmediatas puerta a puerta 
+🇦🇷Entregas a todo el país 
+
+‼Su consulta no molesta"""
+
 def ObtenerDescripcion(producto):
     prd = str.lower(producto)
     if(prd == "termotanques"):
@@ -60,3 +77,5 @@ def ObtenerDescripcion(producto):
         return Cocinas
     elif(prd == "aires"):
         return Aires
+    elif(prd == "microondas"):
+        return Microondas

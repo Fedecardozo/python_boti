@@ -6,6 +6,8 @@ def ObtenerScroll(producto):
         return 910
     elif(prd == "aires"):
         return 820
+    elif(prd == "microondas"):
+        return 922
     
 def ObtenerNameCarpeta(producto):
    return str.upper(producto)

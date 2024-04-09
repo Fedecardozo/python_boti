@@ -72,6 +72,7 @@ def clickPublicar():
     if(validarPrecios() and validarZona() and confirmar()):
         #llamar a boti
         boti.publicarBoti(int(entry.get()),int(entryMax.get()),int(entryZona.get()),var.get(),select_options.get())
+        msjBox.showinfo("Finished","Proceso completo!")
 
 def validate_input(new_text):
     # Verificar si el nuevo texto contiene solo números
@@ -136,7 +137,7 @@ fieldset2 = LabelFrame(frame2, text="Que vas publicar",padx=10,pady=10)
 fieldset2.config(bg="#8AB4F8")
 fieldset2.pack(fill="x")
 
-opciones = ["Termotanques", "Cocinas", "Tanques", "Aires"]
+opciones = ["Termotanques", "Cocinas", "Tanques", "Aires", "Microondas"]
 
 select_options = StringVar()
 select_options.set(opciones[0])

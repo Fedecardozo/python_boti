@@ -97,17 +97,18 @@ def publicarBoti(min, max, zone, facebook, producto):
 
     time.sleep(2)
     Funciones.AbriNavegador()
-    time.sleep(5)
+    time.sleep(6)
 
-    for i in range(len(zona)):    
+    for i in range(len(zona)):
+        if(i>0):
+            time.sleep(12)
+        
         fotos_path = Funciones.NumerosSecuenciales(num,num+3)
         num = num + 3
         strCarpeta = '00'
         time.sleep(2)
         pathCarpeta = strCarpeta + carpeta
         marketplace(pathCarpeta,fotos_path,zona[i],min,max,facebook,producto)
-        break
-        time.sleep(12)
 
 # publicarBoti(min,max,carpeta,zona,facebook)
 
