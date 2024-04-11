@@ -137,7 +137,7 @@ fieldset2 = LabelFrame(frame2, text="Que vas publicar",padx=10,pady=10)
 fieldset2.config(bg="#8AB4F8")
 fieldset2.pack(fill="x")
 
-opciones = ["Termotanques", "Cocinas", "Tanques", "Aires", "Microondas"]
+opciones = ["Termotanques", "Cocinas", "Tanques", "Aires", "Microondas", "Heladeras"]
 
 select_options = StringVar()
 select_options.set(opciones[0])

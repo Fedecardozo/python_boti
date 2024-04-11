@@ -4,7 +4,7 @@ def ObtenerScroll(producto):
         return 780
     elif(prd == "cocinas"):
         return 910
-    elif(prd == "aires"):
+    elif(prd == "aires" or "heladeras"):
         return 820
     elif(prd == "microondas"):
         return 922

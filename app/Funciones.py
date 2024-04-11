@@ -104,12 +104,18 @@ def CargarUbicacion(ubi):
     # pyautogui.click("acassuso.png")
     Click(Elementos.Ubicacion)
 
+# def GenerarPrecio(min, max):
+#     num = random.randint(min,max)
+#     strNum = str(num)
+#     indice = random.randint(0,1)
+#     vec = ["000","999"]
+#     return strNum + vec[indice]
+
 def GenerarPrecio(min, max):
     num = random.randint(min,max)
     strNum = str(num)
-    indice = random.randint(0,1)
-    vec = ["000","999"]
-    return strNum + vec[indice]
+    azar = random.randint(100,999)
+    return strNum + str(azar)
 
 def AbriNavegador():
     pyautogui.hotkey("win","r")

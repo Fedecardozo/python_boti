@@ -67,6 +67,19 @@ Microondas
 
 ‼Su consulta no molesta"""
 
+Heladeras = """🏠SAN JORGE HOGAR🏠
+Heladeras. 
+
+🏆Las mejores marcas
+🤍 Bambi 
+🤍 Briket
+🤍 Patrick
+🤍 Drean
+💲Los mejores precios 
+✅Garantía directa de fábrica 
+🌪Entregas inmediatas
+🇦🇷Envios a todo el país"""
+
 def ObtenerDescripcion(producto):
     prd = str.lower(producto)
     if(prd == "termotanques"):
@@ -79,3 +92,5 @@ def ObtenerDescripcion(producto):
         return Aires
     elif(prd == "microondas"):
         return Microondas
+    elif(prd == "heladeras"):
+        return Heladeras
