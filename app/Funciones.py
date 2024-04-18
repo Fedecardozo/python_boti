@@ -111,11 +111,19 @@ def CargarUbicacion(ubi):
 #     vec = ["000","999"]
 #     return strNum + vec[indice]
 
+# def GenerarPrecio(min, max):
+#     num = random.randint(min,max)
+#     strNum = str(num)
+#     azar = random.randint(100,999)
+#     return strNum + str(azar)
+
 def GenerarPrecio(min, max):
     num = random.randint(min,max)
     strNum = str(num)
-    azar = random.randint(100,999)
-    return strNum + str(azar)
+    # 45.999 - 58.999 - 36-999 - 52.372 - 90.000 - 85.000 - 32.999 - gratis - 95.999
+    azar = [45999, 58999, 36999, 52372, 90000, 85000, 32999, 0, 95999]
+    indice = random.randint(0,len(azar)-1)
+    return str(azar[indice])
 
 def AbriNavegador():
     pyautogui.hotkey("win","r")
@@ -132,16 +140,21 @@ def getCarpeta(zone):
     
 def scrollFacebook(opc=1, producto="termotanques"):
     scroll = Producto.ObtenerScroll(producto)
+    divScroll = scroll-500
+    pyautogui.scroll(500) 
+    pyautogui.sleep(0.5)
+
     if(opc == 1):
         # 840 Aires clari
         # 930 Cocinas clari
         # 800 termos/tanques clari
-        pyautogui.scroll(scroll+20) 
+        pyautogui.scroll(divScroll+20) 
+        
     elif(opc == 2):
         # 820 Aires
         # 910 Cocinas
         # 780 Termo/Tanques 
-        pyautogui.scroll(scroll) 
+        pyautogui.scroll(divScroll) 
 
 def scrollNegativoFacebook(opc=1):
     if(opc == 1):

@@ -71,7 +71,7 @@ def confirmar():
 def clickPublicar():
     if(validarPrecios() and validarZona() and confirmar()):
         #llamar a boti
-        boti.publicarBoti(int(entry.get()),int(entryMax.get()),int(entryZona.get()),var.get(),select_options.get())
+        boti.publicarBoti(int(entry.get()),int(entryMax.get()),int(entryZona.get()),var.get(),select_options.get(),flag.get())
         msjBox.showinfo("Finished","Proceso completo!")
 
 def validate_input(new_text):
@@ -128,6 +128,30 @@ radio2.pack(pady=5)
 
 # ------------------------- FIN RADIO BUTTONS -----------------------------------
 
+# ------------------------- INICIO RADIO BUTTONS OCULTAR AMIGOS -------------------
+
+frameOcultar = Frame(frameDer,bg="#8AB4F8")
+frameOcultar.pack(fill="x", pady=10)
+
+# Variable de control para los botones de radio
+flag = BooleanVar(value=True)
+
+# Fieldset Facebook a publicar
+fieldsetOcultar = LabelFrame(frameOcultar, text="Ocultar Amigos",padx=10,pady=10)
+fieldsetOcultar.config(bg="#8AB4F8")
+fieldsetOcultar.pack(fill="x")
+
+# Crear botones de radio
+rdo1 = Radiobutton(fieldsetOcultar, text="Si", variable=flag, value=True,bg="#8AB4F8",cursor="hand2")
+rdo2 = Radiobutton(fieldsetOcultar, text="No", variable=flag, value=False,bg="#8AB4F8",cursor="hand2")
+
+# rdo1.pack(side="left", padx=(50), anchor="center")
+# rdo2.pack(side="left", padx=(50), anchor="center")
+rdo1.grid(row=0,column=0,padx=(95,15))
+rdo2.grid(row=0,column=1)
+
+# ------------------------- FIN RADIO BUTTONS OCULTAR AMIGOS -------------------
+
 # ------------------------- INICIO COMBO BOX ------------------------------------
 frame2 = Frame(frameDer,bg="#8AB4F8")
 frame2.pack(fill="x",  pady=10)
@@ -137,7 +161,7 @@ fieldset2 = LabelFrame(frame2, text="Que vas publicar",padx=10,pady=10)
 fieldset2.config(bg="#8AB4F8")
 fieldset2.pack(fill="x")
 
-opciones = ["Termotanques", "Cocinas", "Tanques", "Aires", "Microondas", "Heladeras"]
+opciones = ["Termotanques", "Cocinas", "Tanques", "Aires", "Microondas", "Heladeras", "Secarropas", "Combo_codini"]
 
 select_options = StringVar()
 select_options.set(opciones[0])

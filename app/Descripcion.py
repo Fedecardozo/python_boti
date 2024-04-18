@@ -9,6 +9,7 @@ Garantia escrita de fabrica 📑y garantía de colocación🤝 de 48hs
 
 ☎📱💻 TU CONSULTA NO MOLESTA 💫"""
 
+
 Aires = """🌿San Jorge Hogar 🌿
 AIRES ACONDICIONADOS 💨
 
@@ -80,6 +81,34 @@ Heladeras.
 🌪Entregas inmediatas
 🇦🇷Envios a todo el país"""
 
+Secarropas = """🌿SAN JORGE HOGAR🌿
+
+💥SECARROPAS💥
+
+🏆Las mejores marcas
+🤍 Kohinoor 
+🤍 Drean
+🤍 Codini 
+💲Los mejores precios 
+✅Garantía directa de fábrica 
+🌪Entregas inmediatas
+🇦🇷Envios a todo el país"""
+
+SemiAutomaticos = """🌿SAN JORGE HOGAR🌿
+
+Lavarropas 
+✨Automáticos✨
+✨Semiautomáticos✨
+
+🪄Las mejores marcas 
+❌Drean 
+❌Codini
+❌Columbia 
+💲Los mejores precios 
+✅Garantía directa de fábrica 
+🌪Entregas inmediatas 
+🇦🇷Envios a todo el país"""
+
 def ObtenerDescripcion(producto):
     prd = str.lower(producto)
     if(prd == "termotanques"):
@@ -94,3 +123,7 @@ def ObtenerDescripcion(producto):
         return Microondas
     elif(prd == "heladeras"):
         return Heladeras
+    elif(prd == "secarropas"):
+        return Secarropas
+    elif(prd == "semiautomaticos" or prd == "combo_codini"):
+        return SemiAutomaticos

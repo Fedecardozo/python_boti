@@ -311,6 +311,81 @@ titulos_heladeras = ["🌀🌀LIQUIDAMOS HELADERAS DREAN PATRICK 🌀🌀",
                 "💥💥venta por mayor y menor heladeras 💥💥",
                 "🌟🌟heladeras patrick drean nuevos con garantia 🌟🌟"]
 
+titulos_secarropas = ["🌀🌀LIQUIDAMOS SECARROPAS COLUMBIA KOHINOOR 🌀🌀",
+                "❎❎SECARROPAS DE HOGAR OFERTAS!! HASTA AGOTAR STOCK❎❎",
+                "🌀🌀SECARROPAS DE HOGAR LIQUIDAMOS HASTA AGOTAR STOCK🌀🌀",
+                "🌐🌐ULTIMAS UNIDADES SECARROPAS COLUMBIA KOHINOOR🌐🌐",
+                "👻👻SECARROPAS OFERTA IMPERDIBLE👻👻",
+                "🌊🌐LIQUIDAMOS SECARROPAS LAS MEJORES MARCAS AL MEJOR PRECIO 🌐🌊",
+                "🔱🌀APROVECHE OFERTA LIMITADA SECARROPAS 🌀⚜",
+                "🌀🌀liquidamos secarropas columbia kohinoor 🌀🌀",
+                "❎❎secarropas columbia kohinoor ofertas!! hasta agotar stock❎❎",
+                "🌀🌀secarropas columbia kohinoor liquidamos hasta agotar stock🌀🌀",
+                "🌐🌐ultimas unidades secarropas de hogar🌐🌐",
+                "👻👻secarropas de hogar oferta imperdible👻👻",
+                "🌊🌐liquidamos secarropas de hogar las mejores marcas al mejor precio 🌐🌊",
+                "🔱🌀aproveche oferta limitada secarropas columbia kohinoor 🌀⚜",
+                "🔱🔱SECARROPAS OFERTAS EXCLUSIVAS🔱🔱",
+                "🔥🔥Ofertas Exclusivas Secarropas Columbia Kohinoor🔥🔥",
+                "🔥🔥Aproveche Liquidacion de Secarropas Columbia Kohinoor🔥🔥",
+                "💫💫ofertas exclusivas secarropas columbia kohinoor💫💫",
+                "👻👻aproveche liquidacion de secarropas columbia kohinoor👻👻",
+                "👻👻OFERTAS EXCLUSIVAS SECARROPAS 👻👻",
+                "💥💥APROVECHE LIQUIDACION DE SECARROPAS💥💥",
+                "💥💥OFERTAS EXCLUSIVAS SECARROPAS 💥💥",
+                "💫💫APROVECHE LIQUIDACION DE SECARROPAS 💫💫",
+                "💧💧Oportunidad IMPERDIBLE SECARROPA COLUMBIA KOHINOOR 💧💧",
+                "🚀🚀Hasta Agotar STOCK SECARROPA COLUMBIA KOHINOOR 💧🚿",
+                "🌊🌊Heledera COLUMBIA Y KOHINOOR OPORTUNIDAD UNICA🌊🌊",
+                "🌊🌊Heledera columbia y kohinoor oportunidad única🌊🌊",
+                "🚀🚀Hasta Agotar stock secarropas columbia kohinoor 💧🚿",
+                "💧💧Oportunidad!! imperdible secarropas columbia kohinoor 💧💧",
+                "🌋🌋Promociones!! secarropas kohinoor columbia y a gas🌋🌋",
+                "💫💫Ofertas!! exclusivas secarropas columbia kohinoor precios imperdibles💫💫",
+                "🍁💫SECARROPA Columbia Kohinoor NUEVOS CON garantía LIQUIDAMOS 🍁✨️",
+                "👻🔱PRECIOS IMPERDIBLES SECARROPA KOHINOOR COLUMBIA NUEVOS 👻🔱",
+                "💰💰kohinoor columbia liquidamos secarropas 🌐❇",
+                "💰💰KOHINOOR COLUMBIA LIQUIDAMOS SECARROPA 🌐❇",
+                "🔱🔱SECARROPA KOHINOOR COLUMBIA PRECIOS POR MAYOR Y MENOR 🔱🔱",
+                "💰💰ÚLTIMAS UNIDADES SECARROPA KOHINOOR COLUMBIA 💰💰",
+                "💰💰LIQUIDAMOS SECARROPA KOHINOOR COLUMBIA 💰💰",
+                "💰💰APROVECHE OFERTAS LIMITADAS SECARROPA KOHINOOR COLUMBIA 💰💰",
+                "♾♾LIQUIDAMOS SECARROPA KOHINOOR COLUMBIA NUEVOS OFERTA!!♾♾",
+                "🔥🔥SECARROPA KOHINOOR COLUMBIA NUEVOS VENTA POR MAYOR Y MENOR🔥🔥",
+                "🌎🌎VENTA MINORISTA Y MAYORISTA SECARROPA 🌎🌎",
+                "💥💥VENTA POR MAYOR Y MENOR SECARROPA 💥💥",
+                "🌟🌟SECARROPA KOHINOOR COLUMBIA NUEVOS CON GARANTIA 🌟🌟",
+                "♾♾liquidamos secarropas kohinoor columbia nuevos oferta!!♾♾",
+                "🔥🔥secarropas kohinoor columbia nuevos venta por mayor y menor🔥🔥",
+                "🌎🌎venta minorista y mayorista secarropas 🌎🌎",
+                "💥💥venta por mayor y menor secarropas 💥💥",
+                "🌟🌟secarropas kohinoor columbia nuevos con garantia 🌟🌟"]
+
+titulos_combo_codini = ["🌀🌀LIQUIDAMOS COMBO CODINI SECARROPAS Y LAVARROPA SEMI AUTOMATICOS 🌀🌀",
+                "❎❎COMBO CODINI OFERTAS!! HASTA AGOTAR STOCK❎❎",
+                "🌀🌀COMBO CODINI LIQUIDAMOS HASTA AGOTAR STOCK🌀🌀",
+                "🌐🌐ULTIMAS UNIDADES COMBO CODINI SECARROPAS Y LAVARROPA SEMI AUTOMATICOS🌐🌐",
+                "👻👻COMBO CODINI SECARROPAS Y LAVARROPA SEMI AUTOMATICO OFERTA IMPERDIBLE👻👻",
+                "🌊🌐LIQUIDAMOS COMBO CODINI SECARROPAS Y LAVARROPA SEMI AUTOMATICOS🌐🌊",
+                "🔱🌀APROVECHE OFERTA LIMITADA COMBO CODINI SECARROPAS Y LAVARROPA SEMI AUTOMATICOS 🌀⚜",
+                "🌀🌀liquidamos combo codini secarropas y lavarropas semiautomaticos 🌀🌀",
+                "❎❎combo codini secarropas y lavarropas semiautomaticos ofertas!! hasta agotar stock❎❎",
+                "🌀🌀combo codini secarropas y lavarropas semiautomaticos liquidamos hasta agotar stock🌀🌀",
+                "🌐🌐ultimas unidades combo codini de hogar🌐🌐",
+                "👻👻combo codini de hogar oferta imperdible👻👻",
+                "🌊🌐liquidamos combo codini de hogar las mejores marcas al mejor precio 🌐🌊",
+                "🔱🌀aproveche oferta limitada combo codini secarropas y lavarropas semiautomaticos 🌀⚜",
+                "🔱🔱COMBO CODINI SECARROPAS Y LAVARROPA SEMI AUTOMATICO OFERTAS EXCLUSIVAS🔱🔱",
+                "💫💫Ofertas Exclusivas Combo Codini Secarropa y Lavarropas Semiautomaticos 💫💫",
+                "💫💫Aproveche Liquidacion de Combo Codini Secarropa y Lavarropas Semiautomaticos 💫💫",
+                "💫💫ofertas exclusivas combo codini secarropas y lavarropas semiautomaticos💫💫",
+                "💫💫aproveche liquidacion de combo codini secarropas y lavarropas semiautomaticos💫💫",
+                "💫💫OFERTAS EXCLUSIVAS COMBO CODINI SECARROPAS Y LAVARROPA SEMI AUTOMATICO 💫💫",
+                "💫💫APROVECHE LIQUIDACION DE COMBO CODINI SECARROPAS Y LAVARROPA SEMI AUTOMATICO💫💫",
+                "💫💫OFERTAS EXCLUSIVAS COMBO CODINI SECARROPAS Y LAVARROPA SEMI AUTOMATICO 💫💫",
+                "💫💫APROVECHE LIQUIDACION DE COMBO CODINI SECARROPAS Y LAVARROPA SEMI AUTOMATICO 💫💫"]
+
+
 def ObtenerTitulo(titulos):
     num = len(titulos) - 1
     indice = random.randint(0,num)
@@ -330,4 +405,7 @@ def GetTitulo(producto):
         return titulos_microondas
     elif(prd == "heladeras"):
         return titulos_heladeras
-    
+    elif(prd == "secarropas"):
+        return titulos_secarropas
+    elif(prd == "combo_codini"):
+        return titulos_combo_codini

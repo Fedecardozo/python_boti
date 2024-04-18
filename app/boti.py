@@ -8,7 +8,7 @@ import Zonas
 import random
 
 
-def marketplace(carpeta, fotos_path, zona, min, max, facebook, producto):
+def marketplace(carpeta, fotos_path, zona, min, max, facebook, producto, ocultarAmigo=True):
     # Esperar 5 segundos para volver a publicar
     time.sleep(3)
     Funciones.ClickUrl("https://www.facebook.com/marketplace/create/item")
@@ -24,8 +24,8 @@ def marketplace(carpeta, fotos_path, zona, min, max, facebook, producto):
 
     # Scroll
     Funciones.scrollNegativoFacebook(facebook)
-
-    pyautogui.click()
+    if(ocultarAmigo):
+        pyautogui.click()
 
     # Detalles abrir
     time.sleep(0.5)
@@ -90,7 +90,7 @@ def marketplace(carpeta, fotos_path, zona, min, max, facebook, producto):
 # max = int(input("Ingrese precio maximo: "))
 # carpeta = input("Ingrese numero de carpeta: ")
 
-def publicarBoti(min, max, zone, facebook, producto):
+def publicarBoti(min, max, zone, facebook, producto, ocultarAmigos):
     num = 0
     zona = Zonas.ObtenerZona(zone)
     carpeta = Funciones.getCarpeta(zone)
@@ -108,7 +108,7 @@ def publicarBoti(min, max, zone, facebook, producto):
         strCarpeta = '00'
         time.sleep(2)
         pathCarpeta = strCarpeta + carpeta
-        marketplace(pathCarpeta,fotos_path,zona[i],min,max,facebook,producto)
+        marketplace(pathCarpeta,fotos_path,zona[i],min,max,facebook,producto,ocultarAmigos)
 
 # publicarBoti(min,max,carpeta,zona,facebook)
 
