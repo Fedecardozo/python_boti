@@ -251,16 +251,6 @@ def ObtenerZona(zona):
         retorno = Zonas18
     elif(zona == 19):
         retorno = Zonas19
-    elif(zona == 20):
-        retorno = Zonas20
-    elif(zona == 21):
-        retorno = Zonas21
-    elif(zona == 22):
-        retorno = Zonas22
-    elif(zona == 23):
-        retorno = Zonas23
-    elif(zona == 24):
-        retorno = Zonas24 
     else:
         print("No existe esa zona")
         exit()          
